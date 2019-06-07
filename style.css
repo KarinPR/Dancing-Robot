@@ -1,0 +1,192 @@
+body{
+	background-color: rgba(26, 100, 7, 0.5);
+
+}
+h1 {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	/*color: #204291;*/
+	border-bottom: 5px solid #1069F6;
+	font-weight: 900;
+	text-shadow: 0px 0px, 5px 0px, 5px 0px;
+	font-size: 48px;
+}
+.robots {
+
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #5f93e8;
+	 transition: background-color 0.9s ease;
+	 }
+
+.robots {
+	transition: all 1.3s ease 0.5s;
+}
+.robots:hover {
+	 	transform: scale(1.3);
+
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	display: flex; /* Fix the eyes*/
+	
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+    background-color: #FFC359;
+    
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex;
+	margin: 0 auto; /*To fix the body*/
+	transition: transform 0.1s ease;
+} 
+.upper_body:hover {
+	-webkit-transform: skew(-15deg, -5deg);
+    -moz-transform: skew(-15deg, -5deg);
+    -o-transform: skew(-15deg, -5deg);
+    -ms-transform: skew(-15deg, -5deg);
+	transform: skew(-15deg, -5deg);
+}
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px;
+	transition: transform 0.8s; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+.left_arm:hover {
+	-webkit-transform: rotate(160deg) translateY(50%);
+    -moz-transform: rotate(160deg) translateY(50%);
+    -o-transform: rotate(160deg) translateY(50%);
+    -ms-transform: rotate(160deg) translateY(50%);
+    transform: rotate(160deg) translateY(50%);
+    background-color: #FFC359;
+}
+
+.right_arm { 
+	margin-left: 10px; 
+}
+.right_arm:hover {
+	-webkit-transform: rotate(-160deg) translateY(50%);
+    -moz-transform: rotate(-160deg) translateY(50%);
+    -o-transform: rotate(-160deg) translateY(50%);
+    -ms-transform: rotate(-160deg) translateY(50%);
+    transform: rotate(-160deg) translateY(50%);
+    background-color: #FFC359;
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	z-index: 5;
+} 
+.torso:hover{
+	background-color: #FFC359;
+}
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display: flex; /* To arrange the legs*/
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+	transition: transform 0.1s; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+    background-color: #FFC359;
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    background-color: #FFC359;
+}
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;
+	transition: transform 1s; 
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px;  
+}
+.left_eye:hover{
+	-webkit-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    -moz-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    -o-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    -ms-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+}
+
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+.right_eye:hover{
+	-webkit-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    -moz-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    -o-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    -ms-transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+    transform: rotate(1080deg) scale(1.2) translateY(-50%) translateX(50%);
+}
+
+
+
+
+
